@@ -1,0 +1,19 @@
+footer {
+  padding: 4vh 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #060605;
+  color: white;
+  font-size: 19px;
+}
+
+footer .icons {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .icons i {
+  font-size: 1.8rem;
+  color: white;
+}/*# sourceMappingURL=footer.css.map */

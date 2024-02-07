@@ -1,0 +1,37 @@
+<%- include('head') %>
+<link rel="stylesheet" href="/stylesheets/topDishes.css" />
+<title>TOP platos</title>
+<%- include('navbar') %>
+
+<main>
+  <section class="row section2 mt-5 text-center">
+    <div class="d-flex flex-column mt-5 mb-5 text-center">
+      <h3 class="top mt-5 mb-5">Bienvenidos a nuestros platos más exquisitos</h3>
+
+      <div
+        class="d-flex flex-wrap gap-5 justify-content-center align-items-center"
+      >
+        <% result.forEach( elem => { %>
+        <div class="card" style="width: 18rem">
+          <img
+            src="/images/dishes/<%= elem.dish_img %>"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title"><%= elem.dish_name %></h5>
+            <p class="card-text"><%= elem.description %></p>
+            <a
+              href="/restaurant/oneRestaurant/<%= elem.restaurant_id %>"
+              class="boton btn btn-primary"
+              ><%= elem.name %>
+            </a>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('footer') %>

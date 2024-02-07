@@ -1,0 +1,45 @@
+button {
+  background-color: rgb(218, 175, 67) !important;
+  border: none !important;
+}
+
+p {
+  font-family: "Roboto";
+  font-style: italic;
+}
+
+button:hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+img:hover {
+  box-shadow: 0 0 3px wheat;
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+
+.section3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 7.5rem;
+}
+.section3 h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 3rem;
+}/*# sourceMappingURL=allRestaurants.css.map */

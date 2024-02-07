@@ -1,0 +1,66 @@
+<%- include('head') %>
+<link rel="stylesheet" href="/stylesheets/registerRestaurant.css" />
+<title>Edicion restaurante</title>
+<%- include('navbar') %>
+
+<main>
+  <section class="row section1 text-center mt-5">
+    <div class="col mt-4 d-flex flex-column align-items-center text-center">
+      <h2 class="title">Edita tu restaurante</h2>
+      <form
+        class="form_res"
+        action="/restaurant/editRestaurant/<%= result[0].restaurant_id %>"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          class="form-control"
+          type="text"
+          name="name"
+          placeholder="Nombre"
+          value="<%= result[0].name %>"
+          aria-label="default input example"
+        />
+
+        <input
+          class="form-control"
+          type="text"
+          name="style"
+          placeholder="Estilo"
+          value="<%= result[0].style %>"
+          aria-label="default input example"
+        />
+
+        <input
+          class="form-control"
+          type="tel"
+          name="phone_number"
+          placeholder="Contacto"
+          value="<%= result[0].phone_number %>"
+          aria-label="default input example"
+        />
+
+        <input
+          class="form-control form-control-sm"
+          id="formFileSm"
+          type="file"
+          name="img"
+        />
+
+        <h6 style="color: red">
+          <%= typeof message != 'undefined' ? message : null %>
+        </h6>
+
+        <button class="btn btn-primary">Aceptar</button>
+
+        <a href="/">
+          <button class="btn btn-primary" type="button">Cancelar</button>
+        </a>
+
+        <button class="btn btn-primary" type="reset">Reset</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<%- include('footer') %>

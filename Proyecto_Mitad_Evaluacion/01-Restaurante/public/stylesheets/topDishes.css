@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: rgb(218, 175, 67) !important;
+  border: none !important;
+  color: white !important;
+}
+
+.section1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 52vh;
+  margin-top: 5rem;
+}
+.section1 h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 3rem;
+  color: white;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+  border-radius: 6px;
+}
+
+.section2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  text-align: center;
+}
+.section2 .boton {
+  background-color: rgb(218, 175, 67) !important;
+  border: none !important;
+  color: white !important;
+}
+.section2 .boton:hover {
+  box-shadow: 0 0 3px wheat;
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+.section2 h3 {
+  font-family: "Satisfy";
+  font-size: 2.2rem;
+  color: white;
+}
+.section2 .card {
+  background-color: dimgray;
+  color: white;
+  height: 575.33px;
+  width: 288px;
+}
+.section2 .card-img-top {
+  width: 286px;
+  height: 381.33px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}/*# sourceMappingURL=topDishes.css.map */

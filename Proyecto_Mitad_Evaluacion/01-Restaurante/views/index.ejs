@@ -1,0 +1,143 @@
+<%- include('head') %>
+<link rel="stylesheet" href="/stylesheets/home.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Satisfy&display=swap"
+  rel="stylesheet"
+/>
+<title>Home</title>
+<%- include('navbar') %>
+
+<main>
+  <section class="row section-cover d-flex align-items-center">
+    <div class="col-12 text-center">
+      <h1 class="cuchara1">El Cucharón</h1>
+    </div>
+  </section>
+
+  <section
+    class="row section1 d-flex justify-content-center align-items-center"
+  >
+    <div class="col-12 justify-content-center text-center">
+      <article class="p-3 p-sm-5 d-flex flex-column gap-4">
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="/images/cuchara.png" alt="Logo" />
+        </div>
+        <h2>Cucharón - Descubre el sabor del mundo</h2>
+        <p>
+          En <span>Cucharón</span>, te damos la bienvenida a una experiencia
+          culinaria única que te llevará a explorar los sabores más deliciosos
+          de todo el mundo. Somos tu guía personal en el fascinante mundo de la
+          gastronomía, donde cada plato cuenta una historia y cada restaurante
+          es una nueva aventura.
+        </p>
+
+        <p>
+          Ya sea que seas un amante de la cocina tradicional, un buscador de
+          nuevas tendencias gastronómicas o simplemente alguien que busca el
+          lugar perfecto para una ocasión especial, estás en el lugar adecuado.
+          Nuestro equipo de expertos en alimentos ha recorrido las calles y
+          rincones más escondidos para seleccionar los mejores restaurantes,
+          desde encantadores locales familiares hasta elegantes destinos
+          gastronómicos.
+        </p>
+
+        <p>
+          En <span>Cucharón</span>, no solo te ofrecemos recomendaciones, sino
+          que también compartimos historias detrás de cada plato y te sumergimos
+          en la riqueza de la cultura culinaria. Navega por nuestras
+          recomendaciones, descubre secretos culinarios, y deja que tus sentidos
+          se embarquen en un viaje de sabores inolvidables.
+        </p>
+
+        <p>
+          ¡Prepárate para una experiencia gastronómica excepcional! Explora,
+          saborea y sumérgete en el mundo de los mejores restaurantes con
+          nosotros.
+        </p>
+        <p>¡Buen provecho y bienvenido a la aventura de los sabores!</p>
+
+        <hr />
+      </article>
+    </div>
+  </section>
+
+  <!-- RESTAURANTES -->
+
+  <section class="row section2">
+    <div
+      class="col-12 d-flex flex-column align-items-center justify-content-center text-center"
+    >
+      <h2>Estilos que recomendamos</h2>
+      <hr class="delete"/>
+
+      <div
+        class="d-flex flex-wrap gap-4 m-1 justify-content-center mt-3 align-items-center"
+      >
+        <div class="text-center card mb-4" style="width: 18rem">
+          <img
+            src="/images/res_italiano.jpg"
+            class="card-img-top"
+            alt="restaurante italiano"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Hemos visitado gran variedad de restaurantes italianos donde nos
+              especializamos en concreto en la cata de pizzas.
+            </p>
+          </div>
+        </div>
+
+        <div class="card mb-4" style="width: 18rem">
+          <img
+            src="/images/res_mexico2.jpg"
+            class="card-img-top"
+            alt="restaurante mexicano"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              ¡Nos encantan los tacos, el picante y te lo vamos a demostrar!
+            </p>
+          </div>
+        </div>
+
+        <div class="card mb-4" style="width: 18rem">
+          <img
+            src="/images/res_wok.jpg"
+            class="card-img-top"
+            alt="restaurante mexicano"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Estamos empezando a adentrarnos en la cultura asiática en concreto
+              en los Wok, te ayudaremos a elegir bien.
+            </p>
+          </div>
+        </div>
+
+        <div class="card mb-4" style="width: 18rem">
+          <img
+            src="/images/res_burguer.jpg"
+            class="card-img-top"
+            alt="restaurante mexicano"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Si hay una comida que no nos cansamos de comer, esa es la
+              hamburguesa, os recomendaremos las mejores de la zona para que
+              disfrutéis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-3 restaurant text-center mx-auto">
+        <a href="/restaurant">
+          <button type="button" class="btn btn-warning">Restaurantes</button>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('footer') %>

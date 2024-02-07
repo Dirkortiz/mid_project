@@ -1,0 +1,135 @@
+@media screen and (max-width: 575px) {
+  .cuchara1 {
+    font-size: 4.5em !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .delete {
+    width: 200px !important;
+  }
+}
+button {
+  background-color: rgb(218, 175, 67) !important;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.cucharon {
+  font-size: 25px;
+  font-family: cursive;
+  color: rgb(218, 175, 67);
+  font-weight: bold;
+}
+
+.section-cover {
+  background-image: url(../images/foto1.jpg);
+  background-size: cover;
+  min-height: 90vh;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 130px;
+  font-family: "Satisfy", cursive;
+  color: rgb(218, 175, 67);
+  text-shadow: 2px 2px 2px blanchedalmond;
+}
+
+/* Introduccion */
+.section1 {
+  background-image: url(../images/foto2.jpg);
+  background-size: cover;
+  min-height: 90vh;
+  font-family: sans-serif;
+  color: white;
+}
+
+article {
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.548);
+  color: black;
+  text-align: center;
+}
+article img {
+  mix-blend-mode: multiply;
+  height: 300px;
+  width: 250px;
+  border-radius: 14px;
+}
+article h2 {
+  font-size: 4rem;
+  font-style: oblique;
+  color: rgb(218, 175, 67);
+  font-family: "Satisfy";
+}
+article p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-style: italic;
+}
+article p span {
+  color: white;
+  text-transform: capitalize;
+}
+
+/* Restaurants */
+.section2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/fire.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+.section2 button {
+  background-color: rgb(218, 175, 67) !important;
+  border: none !important;
+  color: white;
+}
+.section2 h2 {
+  font-size: 3.75rem;
+  font-family: "Satisfy", cursive;
+  font-style: oblique;
+  color: rgb(218, 175, 67);
+  margin-top: 2.5rem;
+  display: flex;
+  text-align: center !important;
+}
+.section2 .card {
+  background-color: dimgray;
+  color: white;
+  height: 545.33px;
+  width: 288px;
+}
+.section2 .card:hover {
+  box-shadow: 0 0 5px wheat;
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+.section2 .card-img-top {
+  width: 286px;
+  height: 381.33px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.section2 hr {
+  width: 70rem;
+  opacity: 1;
+  height: 0.2rem;
+  border-top: 1px solid wheat;
+  align-items: center;
+}
+.section2 .restaurant:hover {
+  font-weight: bold;
+  border-radius: 1rem;
+  transform: scale(1.1);
+}/*# sourceMappingURL=home.css.map */

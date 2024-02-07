@@ -1,0 +1,72 @@
+<%- include('head') %>
+<link rel="stylesheet" href="/stylesheets/oneRestaurant.css" />
+<title>Home</title>
+<%- include('navbar') %>
+
+<main>
+  <section class="row section1 text-center">
+    <div
+      class="col d-flex flex-column gap-4 text-center justify-content-center mt-3 align-items-center"
+    >
+      <h2 class="mt-5">Bienvenidos a : <%= result[0].name %></h2>
+
+      <img src="/images/restaurants/<%= result[0].res_img %>" alt="" />
+      <h3> <%= result[0].style %></h3>
+      <h5> <%= result[0].phone_number %> ☎</h5>
+
+      <a href="/restaurant/editRestaurant/<%= result[0].restaurant_id %>">
+        <button class="btn btn-primary">Modificar Restaurante</button>
+      </a>
+
+      <a
+        href="/restaurant/deleteRestaurantLogic/<%= result[0].restaurant_id %>"
+      >
+        <button class="btn btn-warning">Eliminar Restaurante</button>
+      </a>
+      <!-- logico -->
+
+      <a href="/dish/createDish/<%= result[0].restaurant_id %>">
+        <button class="btn btn-success">Añadir nuevo plato</button>
+      </a>
+    </div>
+  </section>
+
+  <section class="row section2 text-center">
+    <div class="d-flex flex-column mt-5 mb-5 text-center">
+      <h3>Platos especiales</h3>
+    </div>
+    <% result_dish.forEach((elem) => { %>
+
+    <div
+      class="d-flex flex-wrap gap-5 justify-content-center align-items-center"
+    >
+      <div class="card" style="width: 18rem">
+        <img
+          src="/images/dishes/<%= elem.dish_img %>"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title"><%= elem.name %></h5>
+          <p class="card-text"><%= elem.description %></p>
+          <a
+            href="/dish/editDish/<%= elem.dish_id %>/<%= elem.restaurant_id %>"
+            class="boton btn btn-primary m-1"
+            >Modificar Plato</a
+          >
+
+          <a
+            href="/dish/deleteDish/<%= elem.dish_id %>/<%= elem.restaurant_id %>"
+            class="boton btn btn-danger m-1"
+            >Borrar Plato</a
+          >
+          <!-- Borrado terminal -->
+        </div>
+      </div>
+
+      <% }) %>
+    </div>
+  </section>
+</main>
+
+<%- include('footer') %>
